@@ -13,6 +13,17 @@ public class Person {
 	private Integer age;
 	private String sex;
 
+	public Person(){
+		super();
+	}
+	
+	public Person(String name,String sex,Integer age){
+		this.name = name;
+		this.age = age;
+		this.sex = sex;
+	}
+	
+	
 	public String getGuid() {
 		return guid;
 	}
@@ -47,6 +58,6 @@ public class Person {
     
 	@Override
 	public String toString(){
-		return "Person[guid:"+guid+";age:"+age+";sex:"+sex+"name:"+name+"]";
+		return "Person[guid:"+guid+";age:"+age+";sex:"+sex+";name:"+name+"]";
 	}
 }
